@@ -1,0 +1,7 @@
+<h1>All Teacherts Usernames</h1>
+
+{% csrf_token %}
+{% for t in all %}
+   <strong>{{t.user_name}}  </strong><br/>
+   <hr>
+{% endfor %}

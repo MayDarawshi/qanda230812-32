@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #1f77b3;
+}
+
+
+.fonty{
+    font-family: monospace;
+    font-size: large;
+}
+
+
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(78, 75, 202);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #333;
+  color: white;
+  display: block;
+  margin-top: 40%;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+<body background="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000"  >
+    
+<ul class="fonty">
+  <li><a  href="/">Home</a></li>
+  <li><a  class="active"  href="/register">Register</a></li>
+  <li><a href="/about_us">About Us</a></li>
+  <li><a href="/subjects">Subjects</a></li>
+  <li style="float:right"><a href="/login">Log In</a></li>
+</ul>
+
+<h1 style="text-align: center; font-weight:bold; font-family: monospace; font-size: 50px; position: absolute; top:15%; left:34%;" >Register As:</h1>
+<button class="button-64" role="button" style="position: absolute; top:40%; left:32%;"><span class="text"><a style="color: white; text-decoration: none; "   href="/signup_user">User</a></span></button>
+<button class="button-64" role="button" style="position: absolute; top:40%; left:49%;"><span class="text"><a style="color: white; text-decoration: none; " href="/signup_teacher">Teacher</a></span></button>
+
+<footer>
+    <p>All CopyRights Are Reserved to Prof. Malik Yousef &copy; 2022</p>
+  </footer>
+  
+
+
+
+</body>
+</html>
+

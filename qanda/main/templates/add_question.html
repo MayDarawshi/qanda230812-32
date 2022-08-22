@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>ADD Question - My Q&A</title>
+    </head>
+    <body>
+        <div class="content">
+        <h1>ADD a Question</h1>
+        <p>Type your question below.</p>
+        <form class=""  method="POST" >
+            {% csrf_token %}
+            <input type="text" name="id"  placeholder="Enter Your Id"></p>
+            <input type="text" name="title"   placeholder="What's your question's title?"></p>
+            <textarea name="question" rows="8" cols="80" placeholder="What's your question?"></textarea></p>
+            <input type="text" name="type"  placeholder="Enter Type ..."></p>
+            <input type="text" name="grade" placeholder="Enter Grade..."></p>
+            <select name="difficulty" id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+              <br>
+              <br>
+            <input type="submit" name="ADD" >
+        </div>
+    </body>
+</html>

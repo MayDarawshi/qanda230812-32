@@ -1,0 +1,10 @@
+<h1>All Questions</h1>
+
+
+{% for i in all %}
+<strong>Descriptions:{{i.question}}  </strong><br/>
+Author : {{i.Author}} <br/>
+Difficulty:{{i.Difficulty}} <br/>
+Type:{{i.Type}}}<br/>
+<hr>
+{% endfor %}

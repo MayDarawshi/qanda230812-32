@@ -1,0 +1,12 @@
+<h1>All Teacherts Info</h1>
+
+
+{% for t in all %}
+<strong>{{t.user_name}}  </strong><br/>
+Email : {{t.email}} <br/>
+Degree:{{t.degree}} <br/>
+Phone:{{t.phone}}<br/>
+Image:{{t.q_image}}<br/>
+
+<hr>
+{% endfor %}
